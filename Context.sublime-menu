@@ -1,0 +1,21 @@
+[
+{
+		"caption": "-",
+		"id": "seperator"
+	}, 
+	{
+		"caption": "Sublime Utils",
+		"mnemonic": "f",
+		"id": "sbulime_utils",
+
+		"children": [{
+				"command": "helloworld",
+				"caption": "Say Hello"
+			},
+		]
+	}, 
+	{
+		"caption": "-",
+		"id": "separator"
+	}
+]
