@@ -1,4 +1,9 @@
 import sublime, sublime_plugin
+import sys, os
+
+if (os.path.join(os.path.dirname(__file__), "lib") in sys.path) == False :
+	sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
+
 
 class HelloworldCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
@@ -40,6 +45,5 @@ class CopyForRouterPasteCommand(sublime_plugin.TextCommand):
 		if filename.find(":/") == -1 : 
 			filename="flash://"+filename
 
-		copyContents="tclsh\nputs [ open \"%s\" w+ ] {%s}\ntclquit\n"%(filename,self.textToSend)
-		sublime.set_clipboard(copyContents)
+		sublime.set_clipboard("tclsh\nputs [ open \"%s\" w+ ] {%s}\ntclquit\n"%(filename,self.textToSend))
 		sublime.message_dialog("TCL commands to write to file %s have been copied to your clipboard.\nPaste to your telnet/SSH session to write the file."%(filename))
