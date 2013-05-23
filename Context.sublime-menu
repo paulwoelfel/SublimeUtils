@@ -1,2 +1,31 @@
 [
+	{
+		"caption": "-",
+		"id": "seperator"
+	}, 
+	{
+		"caption": "Sublime Utils",
+		"mnemonic": "f",
+		"id": "sbulime_utils",
+
+		"children": 
+		[
+			{
+				"command": "helloworld",
+				"caption": "Say Hello"
+			},
+			{
+				"command": "paste_with_ssh",
+				"caption": "Paste with SSH"
+			},
+			{
+				"command": "copy_for_router_paste",
+				"caption": "Copy for file paste on router"
+			},
+		]
+	}, 
+	{
+		"caption": "-",
+		"id": "separator"
+	}
 ]
