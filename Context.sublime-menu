@@ -22,6 +22,10 @@
 				"command": "copy_for_router_paste",
 				"caption": "Copy for file paste on router"
 			},
+			{
+				"command": "format_csv_for_wiki",
+				"caption": "Format CSV as Twiki table"
+			},
 		]
 	}, 
 	{
